@@ -10,7 +10,7 @@ CXX      ?= g++
 CC       ?= gcc
 CXXFLAGS ?= -std=c++17 -O2 -Wall -Wextra -I. -Idatabase
 CFLAGS   ?= -O2 -w -Idatabase
-LDLIBS   ?= -lpthread -ldl
+LDLIBS   ?= -lpthread -lxlsxwriter
 
 BIN      := costanalyzer
 CPP_SRC  := main.cpp $(wildcard services/*.cpp) $(wildcard database/*.cpp) $(wildcard reports/*.cpp)

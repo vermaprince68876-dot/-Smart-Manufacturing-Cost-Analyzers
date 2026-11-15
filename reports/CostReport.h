@@ -1,4 +1,3 @@
-// CostReport - prints the four report sections, in order, to any stream.
 
 #ifndef COST_REPORT_H
 #define COST_REPORT_H
@@ -6,10 +5,17 @@
 #include "Report.h"
 #include "../database/DatabaseManager.h"
 
+#include <string>
+
 class CostReport : public Report {
 public:
     explicit CostReport(DatabaseManager& db) : db_(db) {}
+
     void render(std::ostream& out) override;
+
+    // Export all four report sections to Excel.
+    bool exportExcel(const std::string& filename,
+                     std::string& error);
 
 private:
     void costSection(std::ostream& out);

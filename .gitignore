@@ -13,3 +13,12 @@ factory.db
 .idea/
 .DS_Store
 Thumbs.db
+
+# Generated build and report files
+*.obj
+*.xlsx
+dashboard_qr.png
+
+# Python cache files
+__pycache__/
+*.py[cod]
