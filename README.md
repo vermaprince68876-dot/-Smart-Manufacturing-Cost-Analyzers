@@ -181,4 +181,6 @@ sqlite3 factory.db < database/schema.sql
 | Numbers look odd after editing data | run `./costanalyzer init` to reload the sample factory |
 
 
+## 10.Wed link
 
+https://smart-manufacturing-cost-analyzer.onrender.com/
