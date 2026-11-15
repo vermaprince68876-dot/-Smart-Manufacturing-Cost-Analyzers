@@ -1,3 +1,4 @@
+
 # Smart Manufacturing Cost Analyzer
 
 A small C++ + SQL program for a factory. It records production batches and tells
@@ -178,3 +179,6 @@ sqlite3 factory.db < database/schema.sql
 | `g++: command not found` | install a C++ compiler |
 | `database is locked` | close any SQLite browser that has `factory.db` open |
 | Numbers look odd after editing data | run `./costanalyzer init` to reload the sample factory |
+
+
+
