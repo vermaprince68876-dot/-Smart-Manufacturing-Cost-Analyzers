@@ -184,3 +184,14 @@ sqlite3 factory.db < database/schema.sql
 ## 10.Wed link
 
 https://smart-manufacturing-cost-analyzer.onrender.com/
+
+## Requirements
+
+- C++17 compiler
+- Make / mingw32-make
+- libxlsxwriter (required for Excel report export)
+
+### Windows (MSYS2 MinGW x64)
+
+```bash
+pacman -S mingw-w64-x86_64-libxlsxwriter
